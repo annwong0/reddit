@@ -1,0 +1,115 @@
+@use "../variables"
+
+.navbar
+    padding: 4px 10px
+    background-color: variables.$background
+    position: sticky
+    top: 0
+
+    .navigation
+        margin-top: 2px
+
+        .link
+            text-decoration: none
+            color: inherit
+
+            .logo
+                content: url("./assets/reddit-logo-new.png")
+                width: 92px
+                height: auto
+                margin-left: 10px
+                margin-right: 20px
+                margin-top: 2px
+
+        .dropdown-btn
+            width: 350px
+            padding-left: 8px
+            padding-right: 10px
+            font-weight: 500
+
+            .navigation-text
+                flex-basis: 150px
+                text-align: left
+
+    .search
+        padding-right: 20px
+        width: 400px
+        min-width: 70px
+
+        .search-bar
+            background-color: variables.$lightgray
+            border-radius: 30px
+            padding: 5px 15px
+            font-size: 14px
+            width: 100%
+            margin-left: 15px
+            margin-right: 0px
+
+            &:hover
+                border: 1px solid variables.$primary
+                background-color: inherit
+
+    .dropdown-btn
+        color: variables.$text
+        text-transform: none
+
+        &:hover
+            border: 1px solid variables.$canvas
+            background-color: variables.$background
+
+    .navbar-icon
+        border-radius: 3px
+        padding: 5px
+        margin-right: 8px
+
+    .vertical-bar
+        font-size: 20px
+        color: variables.$canvas
+        margin-right: 3px
+
+    .navbar-icon2
+        background-color: variables.$lightgray
+        padding-left: 8px
+        margin-right: 20px
+
+        &:hover
+            background-color: variables.$canvas
+
+    .user-container
+        margin-top: 2px
+        padding: 0
+        font-size: 11px
+        width: fit-content
+
+        .user-text
+            flex-basis: 150px
+            text-align: left
+
+            .karma
+                color: grey
+
+    @media (max-width: variables.$xxl)
+        .user-container
+            .user-text
+                display: none
+
+    @media (max-width: variables.$lg)
+        .navigation
+            .link
+                .logo
+                    content: url("./assets/reddit-logo.png")
+                    width: 32px
+                    height: auto
+                    margin-left: 10px
+                    margin-right: 5px
+                    margin-top: 2px
+
+            .dropdown-btn
+                width: fit-content
+
+                .navigation-text
+                    display: none
+
+    @media (max-width: variables.$md)
+        .hidden-btn
+            display: none

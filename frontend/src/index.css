@@ -1,0 +1,268 @@
+/* colours */
+/* screen */
+body {
+  margin: 0;
+  width: 100vw;
+  font-family: "Lato", sans-serif;
+}
+
+.pages {
+  min-height: 90vh;
+}
+.pages .card {
+  border: 1px solid #cdcdcd;
+  box-shadow: 0 0;
+  margin: 0;
+  padding: 7px;
+}
+
+.home-page {
+  background-color: #DAE0E6;
+  padding: 20px 150px 0 150px;
+}
+@media (max-width: 960px) {
+  .home-page {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .home-page .main-nav {
+    width: 100%;
+  }
+  .home-page .side-nav {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .home-page {
+    padding: 0;
+  }
+}
+
+.user-page {
+  background-color: #DAE0E6;
+}
+
+.navbar {
+  padding: 4px 10px;
+  background-color: #FFFFFF;
+  position: sticky;
+  top: 0;
+}
+.navbar .navigation {
+  margin-top: 2px;
+}
+.navbar .navigation .link {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar .navigation .link .logo {
+  content: url("./assets/reddit-logo-new.png");
+  width: 92px;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 2px;
+}
+.navbar .navigation .dropdown-btn {
+  width: 350px;
+  padding-left: 8px;
+  padding-right: 10px;
+  font-weight: 500;
+}
+.navbar .navigation .dropdown-btn .navigation-text {
+  flex-basis: 150px;
+  text-align: left;
+}
+.navbar .search {
+  padding-right: 20px;
+  width: 400px;
+  min-width: 70px;
+}
+.navbar .search .search-bar {
+  background-color: #f6f7f8;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-size: 14px;
+  width: 100%;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+.navbar .search .search-bar:hover {
+  border: 1px solid #2196f3;
+  background-color: inherit;
+}
+.navbar .dropdown-btn {
+  color: #000;
+  text-transform: none;
+}
+.navbar .dropdown-btn:hover {
+  border: 1px solid #DAE0E6;
+  background-color: #FFFFFF;
+}
+.navbar .navbar-icon {
+  border-radius: 3px;
+  padding: 5px;
+  margin-right: 8px;
+}
+.navbar .vertical-bar {
+  font-size: 20px;
+  color: #DAE0E6;
+  margin-right: 3px;
+}
+.navbar .navbar-icon2 {
+  background-color: #f6f7f8;
+  padding-left: 8px;
+  margin-right: 20px;
+}
+.navbar .navbar-icon2:hover {
+  background-color: #DAE0E6;
+}
+.navbar .user-container {
+  margin-top: 2px;
+  padding: 0;
+  font-size: 11px;
+  width: fit-content;
+}
+.navbar .user-container .user-text {
+  flex-basis: 150px;
+  text-align: left;
+}
+.navbar .user-container .user-text .karma {
+  color: grey;
+}
+@media (max-width: 1200px) {
+  .navbar .user-container .user-text {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .navbar .navigation .link .logo {
+    content: url("./assets/reddit-logo.png");
+    width: 32px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 2px;
+  }
+  .navbar .navigation .dropdown-btn {
+    width: fit-content;
+  }
+  .navbar .navigation .dropdown-btn .navigation-text {
+    display: none;
+  }
+}
+@media (max-width: 780px) {
+  .navbar .hidden-btn {
+    display: none;
+  }
+}
+
+.createPost .card .form-control {
+  width: 100%;
+}
+.createPost .card .form-control .card-input {
+  background-color: #f6f7f8;
+  padding: 5px 15px;
+  font-size: 14px;
+  margin: 0 0 0 5px;
+  border-radius: 3px;
+  border: 1px solid #DAE0E6;
+}
+.createPost .card .form-control .card-input:hover {
+  border: 1px solid #2196f3;
+  background-color: #FFFFFF;
+}
+.createPost .card .btn-container {
+  float: right;
+}
+.createPost .card .btn-container .card-btn {
+  border-radius: 3px;
+}
+.createPost .card .btn-container .card-btn:last-child {
+  margin-left: 5px;
+}
+
+.sortAndLayout .card {
+  padding: 8px 13px;
+}
+.sortAndLayout .card .card-btn {
+  text-transform: inherit;
+  font-weight: bold;
+  color: gray;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.sortAndLayout .card .card-btn-active {
+  color: #2196f3;
+  text-transform: inherit;
+  background-color: #f6f7f8;
+  border-radius: 30px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.sortAndLayout .card .card-btn2 {
+  float: right;
+  color: gray;
+}
+.sortAndLayout .card .card-btn:hover, .sortAndLayout .card .card-btn2:hover {
+  background-color: #f6f7f8;
+  border-radius: 30px;
+}
+
+.premium-component .card {
+  padding: 10px 12px 7px 12px;
+}
+.premium-component .card .shield-icon {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.premium-component .card .theme-color {
+  color: #ff3d00;
+}
+.premium-component .card .theme-bgcolor {
+  background-color: #ff3d00;
+}
+.premium-component .card .text {
+  font-size: 12px;
+}
+.premium-component .card .text .header {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.premium-component .card .premium-btn {
+  width: 100%;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.site-info-component {
+  font-size: 13px;
+}
+.site-info-component .container {
+  margin: 4px 5px 10px 5px;
+}
+.site-info-component .container .link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+.site-info-component .divider {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.post-component .card:hover {
+  border: 1px solid gray;
+}
+
+.recent-posts-component .card {
+  padding: 14px;
+}
+.recent-posts-component .card .header {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+/*# sourceMappingURL=index.css.map */

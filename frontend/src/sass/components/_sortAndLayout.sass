@@ -1,0 +1,28 @@
+@use "../variables"
+
+.sortAndLayout
+    .card
+        padding: 8px 13px
+
+        .card-btn
+            text-transform: inherit
+            font-weight: bold
+            color: gray
+            padding: 5px 10px
+            font-size: 14px
+
+        .card-btn-active
+            color: variables.$primary
+            text-transform: inherit
+            background-color: variables.$lightgray
+            border-radius: 30px
+            font-weight: bold
+            padding: 5px 10px
+
+        .card-btn2
+            float: right
+            color: gray
+
+        .card-btn:hover, .card-btn2:hover
+            background-color: variables.$lightgray
+            border-radius: 30px

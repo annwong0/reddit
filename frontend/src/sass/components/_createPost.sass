@@ -1,0 +1,27 @@
+@use "../variables"
+
+.createPost
+    .card
+        .form-control
+            width: 100%
+
+            .card-input
+                background-color: variables.$lightgray
+                padding: 5px 15px
+                font-size: 14px
+                margin: 0 0 0 5px
+                border-radius: 3px
+                border: 1px solid variables.$canvas
+
+                &:hover
+                    border: 1px solid variables.$primary
+                    background-color: variables.$background
+
+        .btn-container
+            float: right
+
+            .card-btn
+                border-radius: 3px
+
+                &:last-child
+                    margin-left: 5px
