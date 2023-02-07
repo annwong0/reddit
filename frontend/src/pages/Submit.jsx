@@ -2,10 +2,13 @@ import {
     Grid,
     Card,
     CardContent,
+    List,
+    ListItem,
     Typography,
     Button,
     Divider,
-    Stack
+    Stack,
+    TextField
 } from "@mui/material"
 
 import PanoramaFishEyeIcon from '@mui/icons-material/PanoramaFishEye';
@@ -40,11 +43,14 @@ const Submit = () => {
                         </Grid>
                         <Grid item xs={12}>
                             <Card className="card">
+                                <CardContent>
 
+                                </CardContent>
+                                <CardContent>
+                                    <TextField placeholder="Title"/>
+                                </CardContent>
                             </Card>
-
                         </Grid>
-
                     </Grid>
                 </Grid>
                 <Grid item xs={4} className="rules">
@@ -53,8 +59,33 @@ const Submit = () => {
                         <img src={RulesLogo} alt="" />
                         <Typography className="header">Posting to Reddit</Typography>
                         </Stack>
+                        <List className="list-item">
+                            <Divider/>
+                            <ListItem>
+                                1. Remember the human
+                            </ListItem>
+                            <Divider/>
+                            <ListItem>
+                                2. Behave like you would in real life
+                            </ListItem>
+                            <Divider/>
+                            <ListItem>
+                                3. Look for the original source of content
+                            </ListItem>
+                            <Divider/>
+                            <ListItem>
+                                4. Search for duplicates before posting
+                            </ListItem>
+                            <Divider/>
+                            <ListItem>
+                                5. Read the community’s rules
+                            </ListItem>
+                            <Divider/>
+                        </List>
                     </Card>
-                    <Typography>Please be mindful of reddit's content policy and practice good reddiquette.</Typography>
+                    <Typography className="notes">
+                        Please be mindful of reddit's <span>content policy</span> <br/>and practice good <span>reddiquette</span>.
+                    </Typography>
                 </Grid>
             </Grid>
         </div>

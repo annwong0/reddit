@@ -49,6 +49,9 @@ body {
   background-color: #DAE0E6;
   padding: 40px 90px;
 }
+.submit-page .card {
+  border: none;
+}
 .submit-page .form-input .header {
   font-size: 17px;
   font-weight: bold;
@@ -77,6 +80,9 @@ body {
   flex-basis: 250px;
   text-align: left;
 }
+.submit-page .rules {
+  margin-top: 25px;
+}
 .submit-page .rules img {
   width: 50px;
 }
@@ -85,6 +91,19 @@ body {
   font-size: 15px;
   margin-top: 17px;
   margin-left: 5px;
+}
+.submit-page .rules .list-item {
+  font-size: 15px;
+}
+.submit-page .rules .notes {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: gray;
+}
+.submit-page .rules .notes span {
+  color: #2196f3;
+  cursor: pointer;
 }
 
 .navbar {
