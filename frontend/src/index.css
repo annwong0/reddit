@@ -36,10 +36,55 @@ body {
   .home-page {
     padding: 0;
   }
+  .home-page .card {
+    border-radius: 1px;
+  }
 }
 
 .user-page {
   background-color: #DAE0E6;
+}
+
+.submit-page {
+  background-color: #DAE0E6;
+  padding: 40px 90px;
+}
+.submit-page .form-input .header {
+  font-size: 17px;
+  font-weight: bold;
+}
+.submit-page .form-input .draft-btn {
+  font-weight: bold;
+  font-size: 13px;
+}
+.submit-page .form-input .divider {
+  background-color: #eaeaea;
+  margin-bottom: 20px;
+}
+.submit-page .form-input .choose-community-btn {
+  text-transform: inherit;
+  background-color: #FFFFFF;
+  color: gray;
+  width: 300px;
+  padding: 10px;
+}
+.submit-page .form-input .choose-community-btn:hover {
+  background-color: #FFFFFF;
+}
+.submit-page .form-input .choose-community-btn .text {
+  color: #000;
+  font-size: 14px;
+  flex-basis: 250px;
+  text-align: left;
+}
+.submit-page .rules img {
+  width: 50px;
+}
+.submit-page .rules .header {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 17px;
+  margin-left: 5px;
 }
 
 .navbar {
@@ -47,6 +92,7 @@ body {
   background-color: #FFFFFF;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 .navbar .navigation {
   margin-top: 2px;
@@ -64,17 +110,17 @@ body {
   margin-top: 2px;
 }
 .navbar .navigation .dropdown-btn {
-  width: 350px;
+  width: 320px;
   padding-left: 8px;
   padding-right: 10px;
   font-weight: 500;
 }
 .navbar .navigation .dropdown-btn .navigation-text {
-  flex-basis: 150px;
+  flex-basis: 190px;
   text-align: left;
 }
 .navbar .search {
-  padding-right: 20px;
+  padding-right: 25px;
   width: 400px;
   min-width: 70px;
 }
@@ -112,7 +158,7 @@ body {
 .navbar .navbar-icon2 {
   background-color: #f6f7f8;
   padding-left: 8px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .navbar .navbar-icon2:hover {
   background-color: #DAE0E6;
@@ -121,7 +167,7 @@ body {
   margin-top: 2px;
   padding: 0;
   font-size: 11px;
-  width: fit-content;
+  max-width: 180px;
 }
 .navbar .user-container .user-text {
   flex-basis: 150px;
@@ -235,6 +281,28 @@ body {
   font-weight: bold;
 }
 
+.home-info-component .card {
+  padding: 0;
+}
+.home-info-component .card .header {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.home-info-component .card .divider {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-bottom: 5px;
+}
+.home-info-component .card .btn-container {
+  padding: 12px;
+}
+.home-info-component .card .btn-container .home-info-btn {
+  border-radius: 30px;
+  width: 100%;
+  font-weight: bold;
+}
+
 .site-info-component {
   font-size: 13px;
 }
@@ -252,17 +320,132 @@ body {
   margin-right: 5px;
 }
 
+.post-component .link {
+  text-decoration: none;
+  color: inherit;
+}
+.post-component .card {
+  padding: 0;
+}
 .post-component .card:hover {
   border: 1px solid gray;
 }
+.post-component .card .vote {
+  background-color: #f6f7f8;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+.post-component .card .vote .likes {
+  margin-bottom: 5px;
+  font-weight: 900;
+  font-size: 14px;
+}
+.post-component .card .vote .vote-icon:hover {
+  background-color: #dadada;
+  color: #ff3d00;
+}
+.post-component .card .content .community-avatar {
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -5px;
+}
+.post-component .card .content .post-info {
+  margin-top: -13px;
+}
+.post-component .card .content .post-info .community-name {
+  font-weight: bold;
+  font-size: 12px;
+}
+.post-component .card .content .post-info .username, .post-component .card .content .post-info .time {
+  font-size: 12px;
+  color: gray;
+}
+.post-component .card .content .header {
+  font-weight: bold;
+  font-size: 17px;
+  margin-left: -10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.post-component .card .content .post-img {
+  margin-bottom: -15px;
+}
+.post-component .card .content .btn-container {
+  padding: 0 3px;
+  z-index: 2;
+}
+.post-component .card .content .btn-container .post-btn {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
+.post-component .card .content .btn-container .post-btn:hover {
+  background-color: lightgray;
+  border-radius: 2px;
+}
+.post-component .card .content .btn-container .post-btn2:hover {
+  background-color: lightgray;
+}
 
-.recent-posts-component .card {
-  padding: 14px;
+@media (max-width: 640px) {
+  .vote {
+    display: none;
+  }
 }
 .recent-posts-component .card .header {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 11px;
+  padding: 0 3px;
+}
+.recent-posts-component .card .list {
+  padding: 0;
+}
+.recent-posts-component .card .list .list-item {
+  padding: 0;
+}
+.recent-posts-component .card .list .list-item .link {
+  text-decoration: none;
+}
+.recent-posts-component .card .list .list-item .link:hover .header2 {
+  text-decoration: underline;
+}
+.recent-posts-component .card .list .card {
+  margin: 8px 0;
+  padding: 5px 0;
+  width: 100%;
+  border: none;
+}
+.recent-posts-component .card .list .card img {
+  border-radius: 3px;
+  width: 75px;
+  height: 50px;
+}
+.recent-posts-component .card .list .card .header2 {
+  font-weight: bold;
+  font-size: 14px;
+}
+.recent-posts-component .card .list .card .list-info {
+  font-size: 12px;
+  color: gray;
+}
+.recent-posts-component .card .clear-btn {
+  color: gray;
+  text-transform: inherit;
+  font-size: 11px;
+  width: 100%;
+  padding: 0;
+  padding-right: 5px;
+}
+.recent-posts-component .card .clear-btn:hover {
+  background-color: inherit;
+}
+.recent-posts-component .card .clear-btn .clear-btn-text {
+  text-align: right;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -20,6 +20,11 @@ const Home = () => {
                     <Stack direction="column" spacing={2}>
                         <CreatePost />
                         <SortAndLayout />
+
+                        <Post />
+                        <Post />
+                        <Post />
+                        <Post />
                         <Post />
                     </Stack>
                 </Grid>

@@ -5,6 +5,7 @@
     background-color: variables.$background
     position: sticky
     top: 0
+    z-index: 10
 
     .navigation
         margin-top: 2px
@@ -22,17 +23,17 @@
                 margin-top: 2px
 
         .dropdown-btn
-            width: 350px
+            width: 320px
             padding-left: 8px
             padding-right: 10px
             font-weight: 500
 
             .navigation-text
-                flex-basis: 150px
+                flex-basis: 190px
                 text-align: left
 
     .search
-        padding-right: 20px
+        padding-right: 25px
         width: 400px
         min-width: 70px
 
@@ -70,7 +71,7 @@
     .navbar-icon2
         background-color: variables.$lightgray
         padding-left: 8px
-        margin-right: 20px
+        margin-right: 10px
 
         &:hover
             background-color: variables.$canvas
@@ -79,7 +80,7 @@
         margin-top: 2px
         padding: 0
         font-size: 11px
-        width: fit-content
+        max-width: 180px
 
         .user-text
             flex-basis: 150px

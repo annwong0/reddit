@@ -8,7 +8,8 @@ import {
     Input, 
     Tooltip, 
     IconButton,
-    Grid
+    Grid,
+    Badge
 } from "@mui/material"
 
 import InsertPhotoOutlinedIcon from '@mui/icons-material/InsertPhotoOutlined';
@@ -17,6 +18,7 @@ import AttachFileSharpIcon from '@mui/icons-material/AttachFileSharp';
 import AvatarIcon from "../assets/avatar.png"
 
 const CreatePost = () => {
+
     return ( 
         <div className="createPost">
             <Card className="card">
@@ -25,7 +27,15 @@ const CreatePost = () => {
                         <Link to={{
                             pathname: "/user/:username"
                         }}>
-                            <Avatar src={AvatarIcon} alt="User"/>
+                            <Badge
+                                color="success"
+                                className="badge"
+                                anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                                variant="dot"
+                                overlap="circular"
+                            >
+                                <Avatar src={AvatarIcon} alt="User"/>
+                            </Badge>
                         </Link>
                     </Grid>
                     <Grid item xs={8}>

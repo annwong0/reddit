@@ -1,5 +1,76 @@
 @use "../variables"
 .post-component
+    .link
+        text-decoration: none
+        color: inherit
+
     .card
+        padding: 0
+
         &:hover
             border: 1px solid gray
+
+        .vote
+            background-color: variables.$lightgray
+            text-align: center
+            padding-top: 8px
+            padding-bottom: 5px
+
+            .likes
+                margin-bottom: 5px
+                font-weight: 900
+                font-size: 14px
+
+            .vote-icon
+                &:hover
+                    background-color: #dadada
+                    color: variables.$secondary
+
+        .content
+            .community-avatar
+                margin-top: -10px
+                margin-left: -10px
+                margin-right: -5px
+
+            .post-info
+                margin-top: -13px
+                .community-name
+                    font-weight: bold
+                    font-size: 12px
+
+                .username, .time
+                    font-size: 12px
+                    color: gray
+
+            .header
+                font-weight: bold
+                font-size: 17px
+                margin-left: -10px
+                margin-top: 5px
+                margin-bottom: 5px
+
+            .post-img
+                margin-bottom: -15px
+
+            .btn-container
+                padding: 0 3px
+                z-index: 2
+
+                .post-btn
+                    text-transform: capitalize
+                    font-weight: bold
+                    font-size: 12px
+                    color: gray
+                    margin: 0
+
+                    &:hover
+                        background-color: lightgray
+                        border-radius: 2px
+
+                .post-btn2
+                    &:hover
+                        background-color: lightgray
+
+@media (max-width: variables.$sm)
+    .vote
+        display: none

@@ -42,7 +42,7 @@ const SiteInfo = () => {
                         </Stack>
                     </Grid>
                 </Grid>
-                <Divider />
+                <Divider className="divider"/>
                 <Grid container spacing={1} className="container">
                     <Grid item xs={12}>
                         <div className="">Reddit Inc © 2023. All rights reserved</div>

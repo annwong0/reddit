@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 
 import { 
     Box, 
-    Grid,
     Stack,
     Button,
     IconButton,
@@ -11,7 +10,8 @@ import {
     InputAdornment,
     Tooltip,
     Avatar,
-    Divider
+    Divider,
+    Badge
 } from "@mui/material"
 
 import HomeIcon from '@mui/icons-material/Home';
@@ -85,14 +85,24 @@ const Navbar = () => {
                         
                     <Tooltip title="Notifications" arrow>
                         <IconButton className="navbar-icon">
+                        <Badge
+                                color="warning"
+                                className="badge"
+                                anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+                                overlap="circular"
+                                badgeContent={2}
+                            >
                             <NotificationsOutlinedIcon />
+                        </Badge>
                         </IconButton>
                     </Tooltip>
 
                     <Tooltip title="Create Post" arrow>
-                        <IconButton className="navbar-icon">
-                            <AddOutlinedIcon />
-                        </IconButton>
+                        <Link to="/submit">
+                            <IconButton className="navbar-icon">
+                                <AddOutlinedIcon />
+                            </IconButton>
+                        </Link>
                     </Tooltip>
 
                     <Tooltip title="Advertise" arrow>
@@ -106,12 +116,22 @@ const Navbar = () => {
                         style={{display: "flex", justifyContent: "space-between"}}
                         endIcon={<ExpandMoreOutlinedIcon />}
                     >
-                        <Avatar
+                        <Badge
+                            color="success"
+                            className="badge"
+                            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+                            variant="dot"
+                            overlap="circular"
+                            sx={{ paddingRight: -1, marginRight: 1 }}
+                        >
+                            <Avatar
                             alt="user"
                             src={AvatarIcon}
                             sx={{ height: 25, width: 25, marginRight: 1 }}
                             variant="square"
-                        />
+                            />
+                        </Badge>
+                        
                         <Stack direction="column" className="user-text">
                             <span className="username">User</span>
                             <span className="karma">1 karma</span>
