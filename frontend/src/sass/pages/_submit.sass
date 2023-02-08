@@ -6,6 +6,7 @@
 
     .card
         border: none
+        padding: 0
 
     .form-input
         .header
@@ -15,6 +16,19 @@
         .draft-btn
             font-weight: bold
             font-size: 13px
+
+            &:hover
+                background-color: lightgray
+                border-radius: 30px
+                padding: 5px 15px
+
+            .badge
+                margin-left: 5px
+                background-color: gray
+                color: white
+                padding-left: 3px
+                padding-right: 3px
+                font-size: 12px
 
         .divider
             background-color: #eaeaea
@@ -35,6 +49,71 @@
                 font-size: 14px
                 flex-basis: 250px
                 text-align: left
+
+        .title-box
+            outline-color: lightgray
+
+            &:hover
+                outline-color: black
+
+        .btn-container
+            margin-top: -15px
+
+            .btn
+                border-radius: 30px
+                font-weight: bold
+                text-transform: inherit
+                color: grey
+                border-color: grey
+
+                &:hover
+                    background-color: variables.$lightgray
+
+        .btn-container2
+            display: flex
+            justify-content: flex-end
+
+            .btn
+                border-radius: 30px
+                font-weight: bold
+                text-transform: inherit
+
+        .footer
+            background-color: variables.$lightgray
+
+            .checkbox-input
+                width: fit-content
+
+                .checkbox
+                    &:hover
+                        background-color: #fff
+
+            .connect-accounts
+                font-weight: bold
+                color: variables.$primary
+                font-size: 13px
+
+                &:hover
+                    text-decoration: underline
+                    cursor: pointer
+
+            .connect-accounts-icon
+                color: gray
+                margin-bottom: -7px
+
+        .add-option-btn
+            font-weight: bold
+            text-transform: inherit
+
+            &:hover
+                border-radius: 30px
+
+        .days-btn
+            text-transform: inherit
+            color: gray
+
+            &:hover
+                background-color: inherit
 
     .rules
         margin-top: 25px

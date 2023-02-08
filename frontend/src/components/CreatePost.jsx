@@ -2,14 +2,14 @@ import { Link } from "react-router-dom"
 
 import { 
     Card, 
-    Stack, 
     Avatar, 
     FormControl, 
-    Input, 
     Tooltip, 
     IconButton,
     Grid,
-    Badge
+    Badge,
+    TextField,
+    Input
 } from "@mui/material"
 
 import InsertPhotoOutlinedIcon from '@mui/icons-material/InsertPhotoOutlined';
@@ -40,7 +40,7 @@ const CreatePost = () => {
                     </Grid>
                     <Grid item xs={8}>
                         <FormControl className="form-control">
-                            <Input 
+                            <Input
                                 disableUnderline={true}
                                 placeholder="Create Post"
                                 className="card-input"

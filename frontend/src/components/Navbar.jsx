@@ -5,13 +5,13 @@ import {
     Stack,
     Button,
     IconButton,
-    Input,
     FormControl,
-    InputAdornment,
     Tooltip,
     Avatar,
     Divider,
-    Badge
+    Badge,
+    TextField,
+    Input
 } from "@mui/material"
 
 import HomeIcon from '@mui/icons-material/Home';
@@ -49,11 +49,6 @@ const Navbar = () => {
                             disableUnderline={true}
                             placeholder="Search Reddit"
                             className="search-bar"
-                            startAdornment={
-                                <InputAdornment position="start">
-                                    <SearchOutlinedIcon />
-                                </InputAdornment>
-                            }
                         />
                     </FormControl> 
 

@@ -51,6 +51,7 @@ body {
 }
 .submit-page .card {
   border: none;
+  padding: 0;
 }
 .submit-page .form-input .header {
   font-size: 17px;
@@ -59,6 +60,19 @@ body {
 .submit-page .form-input .draft-btn {
   font-weight: bold;
   font-size: 13px;
+}
+.submit-page .form-input .draft-btn:hover {
+  background-color: lightgray;
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+.submit-page .form-input .draft-btn .badge {
+  margin-left: 5px;
+  background-color: gray;
+  color: white;
+  padding-left: 3px;
+  padding-right: 3px;
+  font-size: 12px;
 }
 .submit-page .form-input .divider {
   background-color: #eaeaea;
@@ -79,6 +93,70 @@ body {
   font-size: 14px;
   flex-basis: 250px;
   text-align: left;
+}
+.submit-page .form-input .title-box {
+  outline-color: lightgray;
+}
+.submit-page .form-input .title-box:hover {
+  outline-color: black;
+}
+.submit-page .form-input .btn-container {
+  margin-top: -15px;
+}
+.submit-page .form-input .btn-container .btn {
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: inherit;
+  color: grey;
+  border-color: grey;
+}
+.submit-page .form-input .btn-container .btn:hover {
+  background-color: #f6f7f8;
+}
+.submit-page .form-input .btn-container2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.submit-page .form-input .btn-container2 .btn {
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: inherit;
+}
+.submit-page .form-input .footer {
+  background-color: #f6f7f8;
+}
+.submit-page .form-input .footer .checkbox-input {
+  width: fit-content;
+}
+.submit-page .form-input .footer .checkbox-input .checkbox:hover {
+  background-color: #fff;
+}
+.submit-page .form-input .footer .connect-accounts {
+  font-weight: bold;
+  color: #2196f3;
+  font-size: 13px;
+}
+.submit-page .form-input .footer .connect-accounts:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.submit-page .form-input .footer .connect-accounts-icon {
+  color: gray;
+  margin-bottom: -7px;
+}
+.submit-page .form-input .add-option-btn {
+  font-weight: bold;
+  text-transform: inherit;
+}
+.submit-page .form-input .add-option-btn:hover {
+  border-radius: 30px;
+}
+.submit-page .form-input .days-btn {
+  text-transform: inherit;
+  color: gray;
+}
+.submit-page .form-input .days-btn:hover {
+  background-color: inherit;
 }
 .submit-page .rules {
   margin-top: 25px;
